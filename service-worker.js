@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/parkflix/precache-manifest.afc2c205e18a268562ced60cc2a156f6.js"
+  "/parkflix/precache-manifest.c295401428f90f05dcbc246758d8825c.js"
 );
 
 self.addEventListener('message', (event) => {
