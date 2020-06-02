@@ -27,3 +27,8 @@
 - [] Collections Link
 - [] /collections Route
 - [] On TV Show, show seasons and creators
+
+## Prewview
+
+- [x] https://wngus6429.github.io/parkflix
+- [x] Netlify Build Complete https://sleepy-saha-d78bd6.netlify.app
