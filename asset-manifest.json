@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/parkflix/static/js/main.a9ce5d09.chunk.js",
-    "main.js.map": "/parkflix/static/js/main.a9ce5d09.chunk.js.map",
-    "runtime-main.js": "/parkflix/static/js/runtime-main.8f21a437.js",
-    "runtime-main.js.map": "/parkflix/static/js/runtime-main.8f21a437.js.map",
-    "static/js/2.95a97498.chunk.js": "/parkflix/static/js/2.95a97498.chunk.js",
-    "static/js/2.95a97498.chunk.js.map": "/parkflix/static/js/2.95a97498.chunk.js.map",
-    "index.html": "/parkflix/index.html",
-    "precache-manifest.c295401428f90f05dcbc246758d8825c.js": "/parkflix/precache-manifest.c295401428f90f05dcbc246758d8825c.js",
-    "service-worker.js": "/parkflix/service-worker.js",
-    "static/js/2.95a97498.chunk.js.LICENSE.txt": "/parkflix/static/js/2.95a97498.chunk.js.LICENSE.txt",
-    "static/media/noPosterSmall.png": "/parkflix/static/media/noPosterSmall.92cc8e5e.png"
+    "main.js": "/static/js/main.b1cd613c.chunk.js",
+    "main.js.map": "/static/js/main.b1cd613c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3b872cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3b872cb.js.map",
+    "static/js/2.4980103e.chunk.js": "/static/js/2.4980103e.chunk.js",
+    "static/js/2.4980103e.chunk.js.map": "/static/js/2.4980103e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ae669ba3b88a07feaa57d9223ecedac8.js": "/precache-manifest.ae669ba3b88a07feaa57d9223ecedac8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.4980103e.chunk.js.LICENSE.txt": "/static/js/2.4980103e.chunk.js.LICENSE.txt",
+    "static/media/noPosterSmall.png": "/static/media/noPosterSmall.ccb8dfef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f21a437.js",
-    "static/js/2.95a97498.chunk.js",
-    "static/js/main.a9ce5d09.chunk.js"
+    "static/js/runtime-main.c3b872cb.js",
+    "static/js/2.4980103e.chunk.js",
+    "static/js/main.b1cd613c.chunk.js"
   ]
 }
