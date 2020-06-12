@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/parkflix/static/js/main.407fc4b8.chunk.js",
-    "main.js.map": "/parkflix/static/js/main.407fc4b8.chunk.js.map",
+    "main.js": "/parkflix/static/js/main.9637cc35.chunk.js",
+    "main.js.map": "/parkflix/static/js/main.9637cc35.chunk.js.map",
     "runtime-main.js": "/parkflix/static/js/runtime-main.8f21a437.js",
     "runtime-main.js.map": "/parkflix/static/js/runtime-main.8f21a437.js.map",
     "static/js/2.95a97498.chunk.js": "/parkflix/static/js/2.95a97498.chunk.js",
     "static/js/2.95a97498.chunk.js.map": "/parkflix/static/js/2.95a97498.chunk.js.map",
     "index.html": "/parkflix/index.html",
-    "precache-manifest.ead487fed484f2544399e52af4874788.js": "/parkflix/precache-manifest.ead487fed484f2544399e52af4874788.js",
+    "precache-manifest.f33122b91c65e3c9a4a94bee47370bf0.js": "/parkflix/precache-manifest.f33122b91c65e3c9a4a94bee47370bf0.js",
     "service-worker.js": "/parkflix/service-worker.js",
     "static/js/2.95a97498.chunk.js.LICENSE.txt": "/parkflix/static/js/2.95a97498.chunk.js.LICENSE.txt",
-    "static/media/noPosterSmall.png": "/parkflix/static/media/noPosterSmall.ccb8dfef.png"
+    "static/media/noPosterSmall.png": "/parkflix/static/media/noPosterSmall.92cc8e5e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8f21a437.js",
     "static/js/2.95a97498.chunk.js",
-    "static/js/main.407fc4b8.chunk.js"
+    "static/js/main.9637cc35.chunk.js"
   ]
 }
