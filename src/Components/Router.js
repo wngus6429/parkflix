@@ -25,3 +25,4 @@ export default () => (
 //switch는 렌더할때 오직 한개의 Route만 render한다.
 //<Route path="/tv/popular" render={() => <h1>Popular</h1>} />
 //redirect는 위에 주소들 중에서 아무것도 맞는게 없으면 어느 페이지든 받아서 /로 보내주는것.
+//위에 :id는 얼마든지 다른 이름으로도 할 수가 있다.

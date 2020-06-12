@@ -34,7 +34,7 @@ const Content = styled.div`
   width: 100%; /*father에게width가 없으면 children에게도 없다. #6.8 11분 20초 */
   position: relative;
   z-index: 1;
-  height: 100%;
+  height: 100%; /*이거 안 넣어서 poster.path 사진 안 나옴 */
 `;
 
 const Cover = styled.div`
@@ -48,12 +48,12 @@ const Cover = styled.div`
 `;
 
 const Data = styled.div`
-  width: 70%;
+  width: 70%; /*이게 flex랑 같아서 있어야함. */
   margin-left: 10px;
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: 40px; /*h1으로 안하고 span으로 하면 밑에 margin 안 먹힘 */
   margin-bottom: 18px;
 `;
 
@@ -75,7 +75,7 @@ const Overview = styled.p`
   font-size: 15px;
   opacity: 0.7;
   line-height: 1.5; /*글자 줄당 위, 아래 간격 */
-  width: 60%;
+  width: 65%;
 `;
 
 const DetailPresenter = ({ result, loading, error }) =>
@@ -107,7 +107,7 @@ const DetailPresenter = ({ result, loading, error }) =>
           <ItemContainer>
             <Item>{result.release_date ? result.release_date : result.first_air_date}</Item>
             <Divider>🎞</Divider>
-            <Item>{result.release_date ? result.runtime : result.episode_run_time}min</Item>
+            <Item>{result.runtime ? result.runtime : result.episode_run_time}min</Item>
             <Divider>🎞</Divider>
             <Item>
               {result.genres &&
@@ -123,7 +123,7 @@ const DetailPresenter = ({ result, loading, error }) =>
   ); //위에 result.backdrop_path인 이유는 DetailContainer에서 data:result 이기 때문
 //result.release_date.substring(0, 4)이런 식으로 또 날짜 자르기 가능.
 //위에 release_date, first_air_date로 나뉘는 이유는 영화, TV가 각각 객체가 다르기 때문
-
+//115줄에 끝에 / 안 붙이면 싹다 붙어있음.
 DetailPresenter.propTypes = {
   result: PropTypes.object,
   loading: PropTypes.bool.isRequired,

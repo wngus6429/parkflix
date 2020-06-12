@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-  background-image: url(${(props) => props.bgUrl});
+  background-image: url(${(props) => props.bgUrl}); /*bgUrl은 그냥 지어낸거. */
   height: 180px; /* 이거 안 넣으니 사진 안 나오더라. */
   background-size: cover; /* 그림사이즈가 커서 꽉 채우기 효과 넣음 */
   border-radius: 5px;
@@ -57,7 +57,7 @@ const Year = styled.span`
 //     #555 ${(props) => 100 - props.percenter}%
 //   );
 // `;
-
+//Poster는 각 presenter에서 날아오는 값을 설계도에 받아들여 만들뿐.
 const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
   <Link to={isMovie ? `/movie/${id}` : `/show/${id}`}>
     <Container>
@@ -65,7 +65,7 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
         <Image /* 밑에 명령어는 이미지가 있으면 있는거 보여주고 없으면 내가 지정한 포스터 보여줌 */
           bgUrl={
             imageUrl ? `https://image.tmdb.org/t/p/w300${imageUrl}` : require("../assets/noPosterSmall.png")
-          }
+          } //존재 한다면 사진, 존재 안하면 뒤에꺼. bgUrl은 걍 지어낸거
         />
         <Rating>
           {rating}/10

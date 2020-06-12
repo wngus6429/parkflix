@@ -10,6 +10,7 @@ export default class extends React.Component {
     loading: true,
     error: null,
   };
+  //화살표 함수 사용시 componentDidMount = async() =>{} 가능
   async componentDidMount() {
     try {
       const {
@@ -43,3 +44,5 @@ export default class extends React.Component {
     );
   }
 }
+//34번이 움직이고 13 componentdidmount 움직이고 밑에 setstate하게 되면 다시 render
+//render 다음에 componentdidmount임, setstate 명령어가 실행되면 component를 호출하고 render를 호출

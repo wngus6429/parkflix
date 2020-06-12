@@ -17,11 +17,14 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  all: unset;
+  all: unset; /*이걸로 input 테두리를 삭제 해버림. 뒷 배경과의 조화 */
   font-size: 28px;
   width: 100%;
 `;
 
+//handlesubmit은 searchTerm과 searchs들을 찾아 그래서 만들어준 form에
+//onchange 속성은 요소(element)에 변화가 생겼을때 실행되는 HTML의 이벤트 속성
+//48줄. movieResults가 있다면 그리고 length를 갖고, 0보다크고 이게 true라면 섹션
 const SearchPresenter = ({
   movieResults,
   tvResults,

@@ -27,7 +27,7 @@ export default class extends React.Component {
     } finally {
       this.setState({ loading: false });
     }
-  }
+  } //32이 먼저 실행. componentdidmount 실행, 마지막 다시 또 32번 실행
   render() {
     const { nowPlaying, upcoming, popular, error, loading } = this.state;
     //console.log(this.state);
