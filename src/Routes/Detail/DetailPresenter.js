@@ -86,7 +86,7 @@ const DetailPresenter = ({ result, loading, error }) =>
       </Helmet>
       <Loader />
     </>
-  ) : error ? (
+  ) : error ? ( //여기서 에러 처리까지 한다.
     <Message />
   ) : (
     <Container>
