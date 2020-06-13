@@ -31,7 +31,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://sleepy-saha-d78bd6.netlify.app",
+  "homepage": "https://wngus6429.github.io/parkflix",
   "browserslist": {
     "production": [
       ">0.2%",
