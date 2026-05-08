@@ -8,7 +8,13 @@ import Message from "../../Components/Message";
 import Poster from "../../Components/Poster";
 
 const Container = styled.div`
-  padding: 30px;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 34px 36px 64px;
+
+  @media (max-width: 640px) {
+    padding: 24px 18px 48px;
+  }
 `;
 
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) => (
@@ -58,7 +64,6 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) => (
                 imageUrl={today.poster_path}
                 rating={today.vote_average} //now_playing 네트워크에서 보니까. 평점은 이거임.
                 year={today.first_air_date && today.first_air_date.substring(0, 4)} //substring은 자를수 있게 함.
-                isMovie={true}
               />
             ))}
           </Section>

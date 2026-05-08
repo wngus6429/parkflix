@@ -8,7 +8,13 @@ import Message from "../../Components/Message";
 import Poster from "../../Components/Poster";
 
 const Container = styled.div`
-  padding: 30px; /*내용물 큰 컨테이너, 위, 오른, 왼, 아래 */
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 34px 36px 64px; /*내용물 큰 컨테이너, 위, 오른, 왼, 아래 */
+
+  @media (max-width: 640px) {
+    padding: 24px 18px 48px;
+  }
 `;
 //section의 children(react에서)은 일반적으로 Movie에서 movie 처럼 태그 사이의 값을 받음.
 //25번줄에 있는 section은 section.js를 참조로 css 적용됨.

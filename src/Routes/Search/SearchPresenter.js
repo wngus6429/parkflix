@@ -8,18 +8,40 @@ import Message from "Components/Message";
 import Poster from "Components/Poster";
 
 const Container = styled.div`
-  padding: 0px 20px;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 34px 36px 64px;
+
+  @media (max-width: 640px) {
+    padding: 24px 18px 48px;
+  }
 `;
 
 const Form = styled.form`
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   width: 100%;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
 `;
 
 const Input = styled.input`
   all: unset; /*이걸로 input 테두리를 삭제 해버림. 뒷 배경과의 조화 */
-  font-size: 28px;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
   width: 100%;
+
+  &::placeholder {
+    color: var(--muted);
+  }
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
 `;
 
 //handlesubmit은 searchTerm과 searchs들을 찾아 그래서 만들어준 form에
@@ -70,7 +92,6 @@ const SearchPresenter = ({
                 imageUrl={show.poster_path}
                 rating={show.vote_average} //now_playing 네트워크에서 보니까. 평점은 이거임.
                 year={show.first_air_date && show.first_air_date.substring(0, 4)} //substring은 자를수 있게 함.
-                isMovie={true}
               />
             ))}
           </Section>

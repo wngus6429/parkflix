@@ -5,31 +5,51 @@ import styled from "styled-components";
 //import { fas fa-star } from "@fortawesome/free-solid-svg-icons"
 
 const Container = styled.div`
-  font-size: 12px;
+  min-width: 0;
+  font-size: 13px;
 `;
 
 const Image = styled.div`
   background-image: url(${(props) => props.bgUrl}); /*bgUrl은 그냥 지어낸거. */
-  height: 180px; /* 이거 안 넣으니 사진 안 나오더라. */
+  height: 100%; /* 이거 안 넣으니 사진 안 나오더라. */
+  width: 100%;
   background-size: cover; /* 그림사이즈가 커서 꽉 채우기 효과 넣음 */
-  border-radius: 5px;
+  border-radius: 8px;
   background-position: center center;
-  transition: opacity 0.1s linear; /* 포스터에 마우스 가져다 대면 페이드 효과 */
+  transition: transform 0.2s ease, opacity 0.2s ease; /* 포스터에 마우스 가져다 대면 페이드 효과 */
 `;
 
 const Rating = styled.span`
   bottom: 10px;
-  right: 5px; /* 이걸로 오른쪽 정렬 */
+  right: 10px; /* 이걸로 오른쪽 정렬 */
   position: absolute; /*이것과 밑에 positiong:relative 연계해서 평점을 포스터에 넣음 */
-  opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(8, 11, 18, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 1;
+  backdrop-filter: blur(10px);
 `;
 
 const ImageContainer = styled.div`
-  margin-bottom: 5px;
+  aspect-ratio: 2 / 3;
+  margin-bottom: 12px;
   position: relative; /* 위에 positiong:absolute랑 연계해서 포스터안에 평점 넣음 */
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
   &:hover {
     ${Image} {
-      opacity: 0.3;
+      opacity: 0.72;
+      transform: scale(1.04);
     } /*이부분으로 인해 포스터를 담은 컨테이너에 마우스 가져다 대면 희미해짐*/
     ${Rating} {
       opacity: 1;
@@ -39,12 +59,19 @@ const ImageContainer = styled.div`
 
 const Title = styled.span`
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const Year = styled.span`
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.5); /*맨 마지막 0.5는 투명도 */
+  font-size: 12px;
+  color: var(--muted); /*맨 마지막 0.5는 투명도 */
 `;
 
 // const Star = styled.span`
